@@ -1,0 +1,16 @@
+# define shared seismic data path (download and unzip to your own dir: https://co2datashare.org/dataset/sleipner-4d-seismic-dataset)
+dir_co2=/data/libei/co2_data
+# define shared benchmark model information data path (download and unzip to your own dir: https://co2datashare.org/dataset/sleipner-2019-benchmark-model)
+dir_grid=/data/libei/co2_data/model_grid
+# define the training dataset for 3D full label case:
+train_fulllabel=/data/libei/co2_data/NNpred3D/train_fulllabel
+# define the training dataset for 2D sparse label case (3D U-Net):
+train_sparselabel=/data/libei/co2_data/NNpred3D/train_sparselabel
+# define the test datasets for different year's data for 3D U-Net (subpaths include:'1999_b01_t01', '2001_b01_t01', '2004_b01_t07', '2006_b01_t07', '2008_b01_t08', '2010_b01_t10', '2010_b01_t11', '2010_b10_t10', '2010_b10_t11'):
+test3D=/data/libei/co2_data/NNpred3D/pred_results
+# define path the NN interpretation standards analysis test (subpaths include: data, data_s0):
+analysis=/data/libei/co2_data/NNpred3D/analysis
+# define the training dataset for 2D sparse label case (2D U-Net):
+train_2Dunet=/data/libei/co2_data/NNpred2D/train
+# define the test datasets for different year's data for 2D U-Net (subpaths include:'1999_b01_t01', '2001_b01_t01', '2004_b01_t07', '2006_b01_t07', '2008_b01_t08', '2010_b01_t10', '2010_b01_t11', '2010_b10_t10', '2010_b10_t11'):
+test2D=/data/libei/co2_data/NNpred2D/pred_results
